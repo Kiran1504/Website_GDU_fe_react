@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaThreads } from "react-icons/fa6";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function App() {
     return (
@@ -45,16 +46,36 @@ export default function App() {
                                 <h1 className="text-xl">Contact me</h1>
                             </div>
                             <div className="grid grid-cols-2 w-2/3 py-16 grid-rows-5 gap-y-1.5 justify-items-center gap-x-0 mx-20 text-left">
-                                <div className="w-2/4 text-lg h-auto my-0">Lets Talk</div>
-                                <div className="w-2/4 text-lg h-auto my-0">About Us</div>
-                                <div className="w-2/4 text-lg h-auto my-0">Achievements</div>
-                                <div className="w-2/4 text-lg h-auto my-0">Join Us</div>
-                                <div className="w-2/4 text-lg h-auto my-0">Projects</div>
-                                <div className="w-2/4 text-lg h-auto my-0">Support Us</div>
-                                <div className="w-2/4 text-lg h-auto my-0">Teams</div>
-                                <div className="w-2/4 text-lg h-auto my-0">Become Our Partner</div>
-                                <div className="w-2/4 text-lg h-auto my-0">Privacy Policy</div>
-                                <div className="w-2/4 text-lg h-auto my-0">Copyrights and Patents</div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> Lets Talk </Link>
+                                </div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> About Us </Link>
+                                </div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> Achievements </Link>
+                                </div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> Join Us </Link>
+                                </div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> Projects </Link>
+                                </div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> Support Us </Link>
+                                </div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> Teams </Link>
+                                </div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> Become Our Partner </Link>
+                                </div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> Privacy Policy </Link>
+                                </div>
+                                <div className="w-2/4 text-lg h-auto my-0">
+                                    <Link> Copyrights and Patents </Link>
+                                </div>
                             </div>
                         </div>
                         <div classname="fixed ">
@@ -62,19 +83,19 @@ export default function App() {
                                 <h1 className="text-base">All Rights Reserved</h1>
                             </div>
                             <div className="mx-3 inline-block p-1 rounded-md ">
-                                <FaFacebookF /> {/*facebook logo*/}
+                                <Link><FaFacebookF /> {/*facebook logo*/}</Link>
                             </div>
                             <div className="mx-3 inline-block p-1 rounded-md">
-                                <FaInstagram /> {/*instagram  logo*/}
+                                <Link><FaInstagram /> {/*instagram  logo*/}</Link>
                             </div>
                             <div className="mx-3 inline-block p-1">
-                                <FaXTwitter /> {/*Twitter-X logo*/}
+                                <Link><FaXTwitter /> {/*Twitter-X logo*/}</Link>
                             </div>
                             <div className="mx-3 inline-block p-1">
-                                <FaLinkedinIn /> {/*Linked In logo*/}
+                                <Link><FaLinkedinIn /> {/*Linked In logo*/}</Link>
                             </div>
                             <div className="mx-3 inline-block p-1">
-                                <FaThreads /> {/*threads logo*/}
+                                <Link><FaThreads /> {/*threads logo*/}</Link>
                             </div>
                         </div>
 
